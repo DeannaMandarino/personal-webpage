@@ -1,0 +1,430 @@
+/* Root variables for easier color and style customization */
+:root {
+  --welcome-text-color: #000000;
+  --text-color: #F8F7F3;
+  --secondary-background-color: #B4ACB8;
+  --text-color2: #000000;
+  --welcome-subtitle-color: #5F5663;
+  --color: #f8f7f3;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures border and padding do not affect element width/height */
+}
+
+body {
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.background {
+  background-image: url('images/welcome-section-background.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+.header__title {
+  background-color: black;
+  color: #C5BBAE;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding: 2px 0;
+  margin-bottom: 5px;
+}
+
+.header__nav {
+  margin: 0 auto;
+  text-align: center;
+  border: 1.5px solid black;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header__nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 7px;
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  flex: 1;
+  transition: all 0.5s;
+}
+
+.header__nav-link:hover {
+  background-color: black;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.main {
+
+}
+
+.welcome {
+  color: var(--welcome-text-color);
+  padding-bottom: 20px;
+}
+
+.welcome__title {
+  font-family: 'EB Garamond', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.welcome__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.welcome__text {
+  width: 55%;
+}
+
+.welcome__greeting {
+  font-family: 'Clicker Script', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.welcome__name {
+  font-family: 'EB Garamond', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.welcome__role {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 7px; /*fix this*/
+  line-height: 20px;
+}
+
+.welcome__image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.welcome__profile-image {
+  width: 75%;
+  max-width: 200px;
+  height: auto;
+  border: 1px solid #C5BBAE;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.welcome__contact {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  transition: transform 0.5s;
+}
+
+.welcome__black-arrow {
+  width: 18px;
+}
+
+.welcome__contact-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 7px;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+.welcome__contact:hover {
+  transform: translateY(-5px);
+}
+
+.about-me {
+  background-color: black;
+  padding: 15px;
+}
+
+.about-me__border {
+  border: 1px solid #C5BBAE;
+  padding: 15px;
+  padding-top: 10px;
+}
+
+.about-me__title {
+  font-family: 'Water Brush', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  color: #C5BBAE
+}
+
+.about-me__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__text {
+  font-size: 9px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-me__schooling {
+  margin-bottom: 10px;
+}
+
+.about-me__goals {
+
+}
+
+.about-me__image {
+  width: 45%;
+  max-width: 200px;
+  float: right;
+}
+
+.resume {
+  background-image: url('images/beige-background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  padding: 15px;
+}
+
+.resume__border {
+  border: 1px solid black;
+  padding: 15px;
+  padding-top: 10px;
+}
+
+.resume__title {
+  font-family: 'Water Brush', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.resume__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 9px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume__image {
+  
+}
+
+.resume__image-pdf {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.resume__click {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.resume__click-me {
+  text-wrap: nowrap;
+}
+.resume__black-arrow {
+  width: 18px;
+  margin-left: 3px;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+  margin-left: 0;
+}
+
+.resume__text {
+  
+}
+
+.resume__text-titles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.resume__text-titles:last-of-type {
+  margin-top: 15px;
+}
+
+.resume__education {
+  margin-left: 2px;
+  font-size: 12px;
+}
+
+.resume__experience {
+  margin-left: 2px;
+  font-size: 12px;
+}
+
+.resume__list {
+  margin-left: 35px;
+  font-size: 8px;
+}
+
+.projects {
+  background-color: black;
+  padding: 15px;
+}
+
+.projects__border {
+  border: 1px solid #C5BBAE;
+  padding: 15px;
+  padding-top: 10px;
+}
+
+.projects__title {
+  font-family: 'Water Brush', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  color: #C5BBAE;
+  margin-bottom: 10px; 
+}
+
+.projects__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.projects__display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__image {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 100px 100px 0 0;
+}
+
+.projects__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__white-arrow {
+  width: 25px;
+}
+
+.projects__description {
+  font-size: 9px;
+}
+
+.projects__portfolio {
+  text-align: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-top: 15px;
+}
+
+.projects__portfolio-link {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+  transition: all 0.5s;
+}
+
+.projects__portfolio-link:hover {
+  background-color: white;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.contact {
+  background-image: url('images/beige-background2.png');
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.contact__border {
+  border: 1px solid black;
+  padding: 15px;
+  padding-top: 10px;
+}
+
+.contact__title {
+  font-family: 'Water Brush', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.contact__thanks {
+  margin-bottom: 10px;
+}
+
+.contact__reach-out {
+  margin-bottom: 20px;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: black;
+  text-wrap: nowrap;
+  font-size: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+.contact__link:hover {
+  transform: translateY(-5px);
+}
+
+.contact__link i {
+  margin-right: 5px;
+}
+
+/* Navigation only looks good for 768px and up*/
+/* Not good for mobile, gonna have to do a hamburger menu*/
