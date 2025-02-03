@@ -1,0 +1,59 @@
+.contact {
+  background-image: url('/images/beige-background2.png');
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+  height: 100vh;
+}
+
+.contact__border {
+  border: 1px solid black;
+  padding: 15px;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.contact__title {
+  font-family: 'Water Brush', sans-serif;
+  font-weight: normal;
+  font-size: 2.1875rem;
+  font-size: clamp(2.1875rem, 1.625rem + 2.8125vw, 5rem);
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.contact__thanks {
+  margin-bottom: 20px;
+}
+
+.contact__reach-out {
+  margin-bottom: 30px;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: black;
+  text-wrap: nowrap;
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+  transition: transform 0.3s ease-out;
+}
+
+.contact__link:hover {
+  transform: translateY(-5px);
+}
+
+.contact__link i {
+  margin-right: 5px;
+}

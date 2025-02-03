@@ -1,0 +1,92 @@
+.resume {
+  background-image: url('/images/beige-background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  padding: 15px;
+  height: 100vh;
+}
+
+.resume__border {
+  border: 1px solid black;
+  padding: 15px;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.resume__title {
+  font-family: 'Water Brush', sans-serif;
+  font-weight: normal;
+  font-size: 2.1875rem;
+  font-size: clamp(2.1875rem, 1.625rem + 2.8125vw, 5rem);
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.resume__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.resume__image-pdf {
+  width: 100%;
+  max-width: 185px;
+  border-radius: 10px;
+}
+
+.resume__click {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.resume__click-me {
+  text-wrap: nowrap;
+}
+
+.resume__black-arrow {
+  width: 18px;
+  margin-left: 3px;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+  margin-left: 0;
+}
+
+.resume__text {
+  margin-top: 5px;
+}
+
+.resume__text-titles {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.resume__text-titles:last-of-type {
+  margin-top: 15px;
+}
+
+.resume__education {
+  margin-left: 2px;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.5875rem + 0.8125vw, 1.5625rem);
+}
+
+.resume__experience {
+  margin-left: 2px;
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.5875rem + 0.8125vw, 1.5625rem);
+}
+
+.resume__list {
+  margin-left: 35px;
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.375rem + 0.625vw, 1.125rem);
+}

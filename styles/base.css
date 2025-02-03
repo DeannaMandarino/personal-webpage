@@ -1,0 +1,28 @@
+/* Root variables for easier color and style customization */
+:root {
+  --welcome-text-color: #000000;
+  --text-color: #F8F7F3;
+  --secondary-background-color: #B4ACB8;
+  --text-color2: #000000;
+  --welcome-subtitle-color: #5F5663;
+  --color: #f8f7f3;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures border and padding do not affect element width/height */
+}
+
+body {
+  color: var(--text-color);
+}
+
+.background {
+  background-image: url('/images/welcome-section-background.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

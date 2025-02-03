@@ -1,0 +1,45 @@
+/* HEADER */
+.header__title {
+  background-color: black;
+  color: #C5BBAE;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
+  letter-spacing: 1.5px;
+  padding: 2px 0;
+  margin-bottom: 10px;
+}
+
+.header__nav {
+  margin: 0 auto;
+  text-align: center;
+  border: 1.5px solid black;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.header__nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.4375rem;
+  font-size: clamp(0.4375rem, 0.275rem + 0.8125vw, 1.25rem);
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  flex: 1;
+  transition: all 0.5s;
+}
+
+.header__nav-link:hover {
+  background-color: black;
+  color: white;
+  letter-spacing: 1.5px;
+}

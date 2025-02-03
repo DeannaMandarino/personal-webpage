@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 35px;
+}
+
+.footer__nav {
+  margin: 0 auto;
+  text-align: center;
+  border: 1.5px solid black;
+  width: 80%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.4375rem;
+  font-size: clamp(0.4375rem, 0.275rem + 0.8125vw, 1.25rem);
+  text-wrap: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  flex: 1;
+  transition: all 0.5s;
+}
+
+.footer__nav-link:hover {
+  background-color: black;
+  color: white;
+  letter-spacing: 1.5px;
+}

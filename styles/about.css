@@ -1,0 +1,47 @@
+.about-me {
+  background-color: black;
+  padding: 15px;
+  height: 100vh;
+}
+
+.about-me__border {
+  border: 1px solid #C5BBAE;
+  padding: 15px;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.about-me__title {
+  font-family: 'Water Brush', sans-serif;
+  font-weight: normal;
+  font-size: 2.1875rem;
+  font-size: clamp(2.1875rem, 1.625rem + 2.8125vw, 5rem);
+  color: #C5BBAE;
+  margin-bottom: 10px;
+}
+
+.about-me__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__text {
+  font-size: 0.5rem;
+  font-size: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-me__schooling {
+  margin-bottom: 10px;
+}
+
+.about-me__proactive {
+  margin-bottom: 10px;
+}
+
+.about-me__image {
+  width: 45%;
+  max-width: 500px;
+  float: right;
+}
