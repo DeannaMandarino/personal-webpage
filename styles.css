@@ -485,11 +485,11 @@ body {
   
   .header__nav {
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   
   .header__nav-link {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .welcome {
@@ -498,7 +498,7 @@ body {
   
   .welcome__title {
     font-size: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   
   .welcome__content {
@@ -566,7 +566,7 @@ body {
   }
 
   .about-me__text {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .about-me__schooling {
@@ -579,7 +579,7 @@ body {
 
   .about-me__image {
     width: 45%;
-    max-width: 450px;
+    max-width: 350px;
     float: right;
     margin-top: -60px;
   }
@@ -598,7 +598,8 @@ body {
   
   .resume__image-pdf {
     width: 100%;
-    max-width: 420px;
+    max-width: 320px;
+    margin-top: -40px;
     border-radius: 10px;
     transition: transform 0.5s;
   }
@@ -621,7 +622,7 @@ body {
   }
   
   .resume__text {
-    margin-top: 50px;
+    margin-top: 10px;
   }
   
   .resume__text-titles:last-of-type {
@@ -631,23 +632,23 @@ body {
   .resume__education {
     margin-left: 2px;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
   }
   
   .resume__experience {
     margin-left: 2px;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
   }
   
   .resume__list {
     margin-left: 35px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .projects__title {
     font-size: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .projects__content {
@@ -657,19 +658,17 @@ body {
   }
 
   .projects__image {
-    width: 100%;
+    width: 90%;
     max-width: 200px;
     border-radius: 100px 100px 0 0;
   }
 
   .projects__portfolio {
-    margin-top: 70px;
+    margin-top: 25px;
   }
 
   .contact {
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
+    font-size: 20px;
   }
   
   .contact__title {
@@ -682,15 +681,15 @@ body {
   }
   
   .contact__reach-out {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
   }
   
   .contact__links {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
   }
   
   .contact__link {
-    font-size: 25px;
+    font-size: 20px;
   }
   
   .contact__link i {
@@ -698,7 +697,7 @@ body {
   }
 
   .footer {
-    margin-top: 180px;
+    margin-top: 100px;
   }
   
   .footer__nav {
@@ -713,14 +712,6 @@ body {
   }
   
   .footer__nav-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    text-wrap: nowrap;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    flex: 1;
-    transition: all 0.5s;
+    font-size: 20px;
   }
 }
