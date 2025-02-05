@@ -68,102 +68,10 @@
     transform: translateY(-5px);
   }
 
-  .about-me__title {
-    margin-bottom: 20px;
-  }
-
-  .about-me__schooling {
-    margin-bottom: 20px;
-  }
-
-  .about-me__proactive {
-    margin-bottom: 20px;
-  }
-
-  .about-me__image {
-    width: 45%;
-    max-width: 350px;
-    float: right;
-    margin-top: -60px;
-  }
-
-  .resume__title {
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
-
-  .resume__content {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
   
-  .resume__image-pdf {
-    width: 100%;
-    max-width: 320px;
-    margin-top: -40px;
-    border-radius: 10px;
-    transition: transform 0.5s;
-  }
 
-  .resume__image-pdf:hover {
-    transform: translateY(-5px);
-  }
-  
-  .resume__black-arrow {
-    width: 30px;
-    margin-left: 3px;
-  }
 
-  .resume__click {
-    margin-top: 5px;
-  }
-
-  .resume__click-me {
-    font-size: 20px;
-  }
-  
-  .resume__text {
-    margin-top: 10px;
-  }
-  
-  .resume__text-titles:last-of-type {
-    margin-top: 90px;
-  }
-  
-  .resume__education {
-    margin-left: 2px;
-    font-weight: 500;
-  }
-  
-  .resume__experience {
-    margin-left: 2px;
-    font-weight: 500;
-  }
-  
-  .resume__list {
-    margin-left: 35px;
-  }
-
-  .projects__title {
-    margin-bottom: 20px;
-  }
-
-  .projects__content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-  }
-
-  .projects__image {
-    width: 90%;
-    max-width: 200px;
-    border-radius: 100px 100px 0 0;
-  }
-
-  .projects__portfolio {
-    margin-top: 25px;
-  }
+ 
   
   .contact__title {
     margin-bottom: 20px;
@@ -183,20 +91,5 @@
   
   .contact__link i {
     margin-right: 10px;
-  }
-
-  .footer {
-    margin-top: 150px;
-  }
-  
-  .footer__nav {
-    margin: 0 auto;
-    text-align: center;
-    border: 1.5px solid black;
-    width: 80%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
