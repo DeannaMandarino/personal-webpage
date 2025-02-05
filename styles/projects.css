@@ -1,14 +1,16 @@
 .projects {
-  background-color: black;
+  background-color: var(--black);
   padding: 15px;
   height: 100vh;
 }
 
 .projects__border {
-  border: 1px solid #C5BBAE;
+  border: 1px solid var(--beige);
   padding: 15px;
   padding-top: 10px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects__title {
@@ -16,14 +18,15 @@
   font-weight: normal;
   font-size: 2.1875rem;
   font-size: clamp(2.1875rem, 1.625rem + 2.8125vw, 5rem);
-  color: #C5BBAE;
+  color: var(--beige);
   margin-bottom: 10px;
 }
 
 .projects__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .projects__display {
@@ -54,22 +57,67 @@
 
 .projects__portfolio {
   text-align: center;
-  font-size: 10px;
+  font-size: 0.625rem;
+  font-size: clamp(0.625rem, 0.5rem + 0.625vw, 1.25rem);
   text-transform: uppercase;
   letter-spacing: 1.3px;
-  margin-top: 15px;
+  margin-top: auto;
 }
 
 .projects__portfolio-link {
   text-decoration: none;
-  color: white;
-  border: 1px solid white;
+  color: var(--white);
+  border: 1px solid var(--white);
   padding: 5px;
   transition: all 0.5s;
 }
 
 .projects__portfolio-link:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   letter-spacing: 2px;
+}
+
+/* iPhones */
+@media (min-aspect-ratio: 440/1000) and (max-aspect-ratio: 470/1000) {
+  .projects__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .projects__image {
+    width: 65%;
+    border-radius: 100px 100px 0 0;
+  }
+
+  .projects__portfolio {
+    padding-top: 20px;
+  }
+}
+
+/* iPad Mini */
+@media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 4/3) {
+  .projects__image {
+    width: 80%;
+    border-radius: 100px 100px 0 0;
+  }
+
+  .projects__portfolio {
+    padding-top: 20px;
+  }
+}
+
+/* Computers */
+@media (orientation: landscape) {
+  .projects__title {
+    margin-bottom: 20px;
+  }
+
+  .projects__content {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .projects__portfolio {
+    padding-top: 20px;
+  }
 }
