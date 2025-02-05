@@ -21,7 +21,7 @@
   font-size: 2.1875rem;
   font-size: clamp(2.1875rem, 1.625rem + 2.8125vw, 5rem);
   text-align: right;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .resume__content {
@@ -29,28 +29,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 9px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .resume__image-pdf {
   width: 100%;
-  max-width: 185px;
+  max-width: 250px;
   border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.resume__image-pdf:hover {
+  transform: translateY(-5px);
 }
 
 .resume__click {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-top: 5px;
 }
 
 .resume__click-me {
   text-wrap: nowrap;
+  font-size: 0.8125rem;
+  font-size: clamp(0.8125rem, 0.75rem + 0.3125vw, 1.125rem);
 }
 
 .resume__black-arrow {
-  width: 18px;
+  width: 25px;
   margin-left: 3px;
 }
 
@@ -60,7 +67,7 @@
 }
 
 .resume__text {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .resume__text-titles {
@@ -73,20 +80,70 @@
   margin-top: 15px;
 }
 
-.resume__education {
-  margin-left: 2px;
-  font-size: 0.75rem;
-  font-size: clamp(0.75rem, 0.5875rem + 0.8125vw, 1.5625rem);
-}
-
+.resume__education,
 .resume__experience {
   margin-left: 2px;
-  font-size: 0.75rem;
-  font-size: clamp(0.75rem, 0.5875rem + 0.8125vw, 1.5625rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.8875rem + 0.5625vw, 1.5625rem);
+  font-weight: 600;
 }
 
 .resume__list {
   margin-left: 35px;
-  font-size: 0.5rem;
-  font-size: clamp(0.5rem, 0.375rem + 0.625vw, 1.125rem);
+  font-size: 0.8125rem;
+  font-size: clamp(0.8125rem, 0.75rem + 0.3125vw, 1.125rem);
+}
+
+/* iPhones */
+@media (min-aspect-ratio: 440/1000) and (max-aspect-ratio: 470/1000) {
+  .resume__title {
+    margin-bottom: 40px;
+  }
+
+  .resume__image-pdf {
+    max-width: 310px;
+  }
+
+  .resume__black-arrow {
+    width: 30px;
+  }
+
+  .resume__text {
+    margin-top: 50px;
+  }
+
+  .resume__text-titles:last-of-type {
+    margin-top: 40px;
+  }
+}
+
+/* iPad Mini */
+@media (min-aspect-ratio: 3/4) and (max-aspect-ratio: 4/3) {
+
+}
+
+/* Computers */
+@media (orientation: landscape) {
+  .resume__title {
+    margin-right: 10px;
+  }
+
+  .resume__content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .resume__image-pdf {
+    max-width: 340px;
+    margin-top: -40px;
+  }
+
+  .resume__black-arrow {
+    width: 30px;
+  }
+
+  .resume__text-titles:last-of-type {
+    margin-top: 50px;
+  }
 }
