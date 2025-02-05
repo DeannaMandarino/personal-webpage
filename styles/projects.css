@@ -79,6 +79,22 @@
 }
 
 /* iPhones */
+@media (width: 414px) and (height: 896px) {
+  .projects__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  .projects__image {
+    width: 65%;
+    border-radius: 100px 100px 0 0;
+  }
+
+  .projects__portfolio {
+    padding-top: 20px;
+  }
+}
+
 @media (min-aspect-ratio: 440/1000) and (max-aspect-ratio: 470/1000) {
   .projects__content {
     grid-template-columns: repeat(2, 1fr);
