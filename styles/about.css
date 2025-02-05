@@ -17,18 +17,21 @@
   font-size: 2.1875rem;
   font-size: clamp(2.1875rem, 1.625rem + 2.8125vw, 5rem);
   color: #C5BBAE;
-  margin-bottom: 10px;
 }
 
 .about-me__content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+  border: 1px solid red;
 }
 
 .about-me__text {
-  font-size: 0.5rem;
-  font-size: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
+  flex: 2.5;
+  font-size: 0.4375rem;
+  font-size: clamp(0.4375rem, 0.22499999999999998rem + 1.0625vw, 1.5rem);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -41,7 +44,64 @@
 }
 
 .about-me__image {
-  width: 45%;
-  max-width: 500px;
-  float: right;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue;
 }
+
+.about-me__image-img {
+  width: 30%;
+  max-width: 330px;
+}
+
+/* iPhones */
+@media (min-aspect-ratio: 440/1000) and (max-aspect-ratio: 470/1000) {
+  .about-me__title {
+    margin-bottom: 10px;
+  }
+  .about-me__text {
+    font-size: 0.75rem;
+    font-size: clamp(0.75rem, -0.22499999999999987rem + 3.9999999999999996vw, 0.85rem);
+  }
+
+  .about-me__image-img {
+    width: 60%;
+  }
+}
+
+/* Computers */
+@media (orientation: landscape) {
+  .about-me__title {
+    margin-bottom: 20px;
+  }
+
+  .about-me__content {
+    flex-direction: row;
+  }
+
+  .about-me__image-img {
+    width: 100%;
+  }
+}
+
+/*
+.about-me__title {
+    margin-bottom: 20px;
+  }
+
+  .about-me__schooling {
+    margin-bottom: 20px;
+  }
+
+  .about-me__proactive {
+    margin-bottom: 20px;
+  }
+
+  .about-me__image {
+    width: 45%;
+    max-width: 350px;
+    float: right;
+    margin-top: -60px;
+  }
+*/
